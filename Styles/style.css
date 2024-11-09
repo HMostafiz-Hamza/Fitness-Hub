@@ -31,12 +31,9 @@ font-weight: 600;
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0.5px; 
+    text-align: center;
 }
 
-/* body{
-    width: 1440px;
-    margin: 0px auto;
-} */
 
 body{
     background: #000;
@@ -95,7 +92,7 @@ ul li a{
 
 .banner-title{
     color: #FFF;
-    font-size: 78px;
+    font-size: 4.875rem;
     font-weight: 900;
     align-self: stretch;
 }
@@ -146,7 +143,7 @@ ul li a{
     justify-content: center;
     padding: 5px;
     gap: 0px;
-    transform: translate(180px, -550px);
+    transform: translate(170px, -550px);
 
 }
 
@@ -155,4 +152,89 @@ ul li a{
     font-size: 1.25rem;
     font-weight: 900;
     margin: 0px auto;
+}
+
+/* Main Styles */
+
+/* Change your habbits */
+.section-title{
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.chb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.chb-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.chb-sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habits{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.habit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habit-title{
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.habit-img{
+    border-radius: 160px;
+}
+
+.chb-2{
+    display: flex;
+    padding: 30px 32px 29px 54px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 165px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 576px) {
+    .navbar ul{
+        display: none;
+    }
+
+    .btn-cont{
+        display: flex;
+        gap: 20px;
+    }
+
+    .btn-primary, .btn-secondary{
+        padding: 20px;
+    }
+
+    .banner{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-1{
+        transform: translate(-40px, -150px);
+    }
 }
