@@ -228,6 +228,56 @@ ul li a{
     border-radius: 18px;
 }
 
+/* Calculate you BMI section */
+
+/* Meet our Team Section */
+.our-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.teams{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 0 0;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.team{
+    position: relative;
+    color: white;
+}
+
+.team img{
+    width: 400px;
+    height: 272px;
+    border-radius: 18px;
+}
+
+.name{
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 900;
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+}
+
+.position{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 0.75rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 576px) {
     .navbar ul{
@@ -265,4 +315,14 @@ ul li a{
         padding: 31px 33px 35px 33px;
 
     }
+
+    .teams{
+        grid-template-columns: repeat(1, 1fr);
+        align-self: stretch;
+    }
+
+    .teams img{
+        width: 350px;
+    }
+
 }
