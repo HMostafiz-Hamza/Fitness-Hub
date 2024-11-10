@@ -278,6 +278,64 @@ ul li a{
     left: 20px;
 }
 
+/* Footer Styles */
+
+.footer-cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.footer-title{
+    color: #E6533C;
+    font-size: 4.25rem;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.footer-des{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.links-cont{
+    display: flex;
+    justify-content: space-around;
+}
+
+.links-title{
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.gs-links{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.gs-links a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1.45rem;
+    font-weight: 400;
+}
+
+.hr{
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.rights{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+}
+
 /* Media Queries */
 @media screen and (max-width: 576px) {
     .navbar ul{
@@ -323,6 +381,14 @@ ul li a{
 
     .teams img{
         width: 350px;
+    }
+
+    .footer-cont{
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .links-cont{
+        flex-direction: column;
     }
 
 }
