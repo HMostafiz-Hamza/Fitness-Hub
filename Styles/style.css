@@ -212,6 +212,20 @@ ul li a{
     justify-content: space-between;
     align-items: center;
     gap: 165px;
+    border-radius: 18px;
+    background: #222;
+}
+
+.chb-2-des{
+    color: rgba(255, 255, 255, 0.50);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.chb-2 img{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
 }
 
 /* Media Queries */
@@ -236,5 +250,19 @@ ul li a{
 
     .card-1{
         transform: translate(-40px, -150px);
+    }
+
+    .chb, .habits, .chb-2{
+        flex-direction: column;
+    }
+
+    .title-1{
+    text-align: center;
+    }
+
+    .chb-2{
+        width: 353px;
+        padding: 31px 33px 35px 33px;
+
     }
 }
