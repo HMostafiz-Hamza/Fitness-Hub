@@ -229,6 +229,79 @@ ul li a{
 }
 
 /* Calculate you BMI section */
+.calc{
+    text-align: center;
+}
+
+.calculations{
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.calc-title{
+    color: #FFF;
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+table, tr, td, th{
+    border: 1px solid  rgba(255, 255, 255, 0.10);
+    border-collapse: collapse
+    ;
+}
+
+tr, td, th{
+    padding: 15px;
+}
+
+th{
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.inputs{
+    display: grid;
+    grid-template-areas: 'cm weight'
+                         'age gender'
+                         'activity activity'  ;
+}
+
+input{
+    padding: 12px 40px 12px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.10);
+    border: none;
+}
+
+/* select{
+    padding: 12px 40px 12px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.10);
+    border: none;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 400;
+} */
+
+#gender{
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.10);
+    border: none;
+}
+
+#activity{
+    display: flex;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.10);
+    border: none;
+    margin-bottom: 20px;
+}
 
 /* Meet our Team Section */
 .our-team{
@@ -389,6 +462,19 @@ ul li a{
 
     .links-cont{
         flex-direction: column;
+    }
+
+    .calculations{
+        flex-direction: column;
+    }
+
+    .inputs{
+        grid-template-areas: 'cm'
+                             'weight' 
+                             'age'
+                             'gender' 
+                             'activity';
+                             gap: 10px;
     }
 
 }
